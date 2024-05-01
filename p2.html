@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+	<title>Home Page</title>
+	<style>
+		body {
+			background-image: url(https://i.pinimg.com/originals/38/8a/80/388a802db7b19ff04fc8038bb80fa600.png);
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+
+		nav {
+			background-color: white;
+			height: 50px;
+  		}
+
+		.topnav-centered {
+			float: none;
+  			position: absolute;
+  			top: 50%;
+  			left: 50%;
+  			transform: translate(-50%, -50%);
+		}
+
+		.active {
+			padding: 10px 14px;
+			color: #227c9d;
+			font-family: "Outfit", sans-serif;
+  			font-optical-sizing: auto;
+  			font-style: normal;
+			font-size: 20px;
+		}
+
+		h1 {
+			font-family: "Playfair Display", serif;
+  			font-optical-sizing: auto;
+  			font-style: italic;
+  			font-size: 40px;
+  			text-align: center;
+  			color: #023047;
+  			background-color: white;
+  			width: 500px;
+  			height: 60px;
+  			border-radius: 20px;
+		}
+
+		#desc {
+			font-family: "Outfit", sans-serif;
+  			font-optical-sizing: auto;
+  			font-style: normal;
+  			font-size: 18px;
+  			color: white;
+  			background-color: #457b9d;
+  			width: 750px;
+		}
+
+		#viewQ1, #viewQ2 {
+			width: 210px;
+			height: 220px;;
+		}
+
+		#div1 {
+			margin-top: 70px;
+		}
+	</style>
+</head>
+<body>
+<center>
+	<nav class="navbar navbar-expand-md navbar-custom">
+		<div class="topnav-centered">
+    		<a href="#" class="active" id="navbar-text">Home</a>
+    		<!--Added a Javascript function for this navbar item to go back to the Login page-->
+    		<a href="index.html" class="active" id="navbar-text">Login</a>
+    		<a href="#" class="active" id="navbar-text">About Me</a>
+    		<a href="#" class="active" id="navbar-text">Social Media</a>
+    		<a href="#" class="active" id="navbar-text">Institution</a>
+    		<a href="#" class="active" id="navbar-text">References</a>
+  		</div>
+	</nav>
+
+	<br>
+
+	<div id="div1">
+		<h1>Erin's Online Portfolio</h1>
+		<br>
+		<p id="desc">Click the GIFs bellow to view my ICT projects from the first and second quarters! ☆૮꒰•༝  •。꒱ა</p>
+		<br>
+		<!--Used GIFs as the buttons to click on to view each project-->
+		<a href="p3.html" class="btn" onclick="firstquarter()"><img id="viewQ1" src="https://64.media.tumblr.com/b15eaae2685c790b48898d74a0522137/07da9ffee3c27d6b-6e/s1280x1920/584c8320c23f8a254e14cc1e7a9e30621acf4e24.gifv"></a>
+		<a href="p4.html" class="btn" onclick="secondquarter()"><img id="viewQ2" src="https://64.media.tumblr.com/6cdd2c3b8a0289374cd78ec27bb4b252/07da9ffee3c27d6b-60/s1280x1920/312fb4aa523d5e643c1cf9dd4828862c06baddd7.gifv"></a>
+	</div>
+
+</center>
+
+	<script type="text/javascript">
+		function firstquarter(){
+			document.getElementById('viewQ1').innerHTML="View Quarter 1 Project";
+		}
+
+		function secondquarter(){
+			document.getElementById('viewQ2').innerHTML="View Quarter 2 Project";
+		}
+	</script>
+</body>
+</html>
